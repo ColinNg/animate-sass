@@ -1,6 +1,6 @@
 {
-  "name": "animate-sass",
-  "version": "0.8.2",
+  "name": "@colinng/animate-sass",
+  "version": "0.8.3",
   "description": "animate-sass is a Sass version of Dan Eden's Animate.css.",
   "main": "_animate.scss",
   "scripts": {
