@@ -1,5 +1,20 @@
 # animate-sass
 
+Note: this is a fork of https://github.com/tgdev/animate-sass
+They updated it to fix the Dart Sass / for division errors such as:
+```
+Warning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):  
+Deprecation Warning on line 12, column 40 of file:///C:/Code/.../node_modules/animate-sass/animations/lightspeed/_lightSpeedIn.scss:12:40:
+Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(-$base-degrees, 2) or calc(-1 * $base-degrees / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+12 |            80% { transform: translateX(0%) skewX(-$base-degrees / 2); opacity: 1; } 
+```
+but they didn't publish a new package to the NPM Repository. The last published package was v0.8.2 (6 years ago) but they've added commits to their repo 3 years ago. 
+
 _*Sassy just-add-water CSS animation*_
 
 **animate-sass** is a Sass version of [Dan Eden's](https://github.com/daneden) [Animate.css](https://daneden.me/animate/).
